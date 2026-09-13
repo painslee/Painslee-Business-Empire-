@@ -1,0 +1,17 @@
+{
+  "prospect_id": "b3e2f9f2-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
+  "full_name": "Jane Doe",
+  "contact_method": "whatsapp",
+  "phone": "+2348012345678",
+  "email": "jane@example.com",
+  "source": "partner_link",
+  "via_code": "popoola-habeeb-iqno",
+  "interest": "custom suit",
+  "product_category": "menswear",
+  "budget_range": "₦100k-₦300k",
+  "custom_fit_required": true,
+  "preferred_location_for_fit": "Lagos",
+  "best_time_to_contact": "afternoons",
+  "consent_to_followup": true,
+  "idempotency_key": "uuid-generated-client-12345"
+}

@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Qualification Form — Painslee Market Hub</title>
+</head>
+<body>
+  <h1>Quick style check</h1>
+  <form id="qual" method="post" action="/api/prospects">
+    <label>Full name<br><input name="full_name" required></label><br>
+    <label>Contact method<br>
+      <select name="contact_method">
+        <option value="whatsapp">WhatsApp</option>
+        <option value="sms">SMS</option>
+        <option value="email">Email</option>
+        <option value="in_person">In person</option>
+      </select>
+    </label><br>
+    <label>Phone<br><input name="phone"></label><br>
+    <label>Email<br><input name="email" type="email"></label><br>
+    <input type="hidden" name="via_code" value="popoola-habeeb-iqno">
+    <label>Interest<br><input name="interest"></label><br>
+    <label>Product category<br><input name="product_category"></label><br>
+    <label>Budget range<br><input name="budget_range"></label><br>
+    <label>Custom fit required<br><input name="custom_fit_required" type="checkbox" value="true"></label><br>
+    <label>Preferred location for fit<br><input name="preferred_location_for_fit"></label><br>
+    <label>Best time to contact<br><input name="best_time_to_contact"></label><br>
+    <label><input type="checkbox" name="consent_to_followup" required> I consent to follow up</label><br>
+    <input type="hidden" name="idempotency_key" value="{{GENERATE_SERVER_SIDE}}">
+    <button type="submit">Send</button>
+  </form>
+  <p>Note: This form collects attribution (via=popoola-habeeb-iqno) for tracking only. Operational approvals are internal and will not be requested here.</p>
+</body>
+</html>

@@ -1,0 +1,1 @@
+reconciliation_date,correlation_id,prospect_id,order_id,quote_id,payment_id,payment_provider,provider_transaction_id,payment_amount,payment_currency,payment_status,evidence_link,ledger_id,ledger_account_code,ledger_debit,ledger_credit,ledger_description,project_id,owner_user_id,via_code,source,reconciled,reconciliation_notes,created_at,reconciled_at

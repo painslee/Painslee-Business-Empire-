@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Market Hub Qualification Form",
+  "type": "object",
+  "required": ["full_name","contact_method","via_code","consent_to_followup","idempotency_key"],
+  "properties": {
+    "prospect_id": {"type":"string","format":"uuid"},
+    "full_name": {"type":"string"},
+    "contact_method": {"type":"string","enum":["whatsapp","sms","email","in_person"]},
+    "phone": {"type":"string"},
+    "email": {"type":"string","format":"email"},
+    "source": {"type":"string"},
+    "via_code": {"type":"string","pattern":"^[A-Za-z0-9\-\_]+$"},
+    "interest": {"type":"string"},
+    "product_category": {"type":"string"},
+    "budget_range": {"type":"string"},
+    "custom_fit_required": {"type":"boolean"},
+    "preferred_location_for_fit": {"type":"string"},
+    "best_time_to_contact": {"type":"string"},
+    "consent_to_followup": {"type":"boolean"},
+    "idempotency_key": {"type":"string"}
+  },
+  "additionalProperties": false
+}
